@@ -29,6 +29,7 @@ div.container img {
 }
 
 /* Nav stuff */
+
 div.nav {
     text-align: center;
     margin-top: 2%;
@@ -36,11 +37,15 @@ div.nav {
 
 div.nav li {
     display: inline;
-    padding: 3%; 
-    font-size: 200%;
+    padding: 0 3%; 
+    font-size: 225%;
 }
 
 div.nav a {
     text-decoration: none;
     color: black; 
+}
+
+div.nav a:hover{
+    text-decoration: underline;
 }
