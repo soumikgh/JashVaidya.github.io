@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
@@ -102,3 +103,124 @@ td {
 tr:nth-child(even) {
     background-color: lightgray;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellefair', serif;
+}
+
+a {
+    color: blue;
+}
+
+
+/* HEADER */
+
+h1 {
+    font-size: 350%;
+    font-weight: 400;
+}
+
+//div {
+border: 1px solid red;
+
+}
+div.container {
+    text-align: center;
+    margin-top: 2%;
+}
+div.container img {
+    width: 15%;
+    height: auto;
+    display: inline-block;
+    border-radius: 20%;
+    margin: auto;
+}
+
+/* Nav stuff */
+div.nav {
+    text-align: center;
+    margin-top: 2%;
+}
+div.nav li {
+    display: inline-block;
+    padding: 0 3%;
+    font-size: 225%;
+}
+div.nav a {
+    text-decoration: none;
+    color: black;
+}
+div.nav a {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    /* ^- the important bit. RGB 192,192,192 is the same as #C0C0C0*/
+    
+    -webkit-transition: border 500ms ease;
+    -moz-transition: border 500ms ease;
+    -ms-transition: border 500ms ease;
+    -o-transition: border 500ms ease;
+    transition: border 500ms ease;
+}
+div.nav a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+}
+
+/* ABOUT */
+div.About {
+    font-size: 140%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5%;
+    line-height: 40px;
+}
+
+/* CONTACT */
+div.Contact h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: -4%
+}
+table {
+    text-align: left;
+    margin: auto;
+    margin-top: 5%
+}
+td {
+    text-align: right;
+}
+th {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    font-size: 125%;
+}
+th,
+td {
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+table a {
+    color: blue;
+}
+
+/* Projects */
+.row-4 {
+    margin-top: 3%;
+    font-size: 100%;
+    text-align: center;
+    padding: 0 30%;
+}
+.row-4 h2 {
+    font-weight: 400;
+}
+.row-4 [class*="col-1-4"] {
+    margin-bottom: 3%;
+    font-weight: 400;
+}
+>>>>>>> origin/master
