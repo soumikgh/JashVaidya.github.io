@@ -1,81 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bellefair', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 150%;
 }
 
 
 /* HEADER */
 
-h1 {
-    font-size: 350%;
-    font-weight: 400;
+.header {
+    margin-top: 1%;
 }
 
-//div {
-border: 1px solid red;
-
+.header h1 {
+    font-weight: bold;
+    font-size: 250%;
 }
-div.container {
+
+.header img {
+    border-radius: 10%;
+}
+
+
+/* NAV BAR */
+
+.container.nav {
+    display: block;
     text-align: center;
     margin-top: 2%;
-}
-div.container img {
-    width: 15%;
-    height: auto;
-    display: inline-block;
-    border-radius: 100%;
-    margin: auto;
+    font-size: 200%;
 }
 
-/* Nav stuff */
-div.nav {
-    text-align: center;
-    margin-top: 2%;
-}
-div.nav li {
-    display: inline-block;
-    padding: 0 3%;
-    font-size: 225%;
-}
-div.nav a {
+.nav a {
     text-decoration: none;
     color: black;
 }
-div.nav a:hover {
-    text-decoration: underline;
+
+div.nav a {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    /* ^- the important bit. RGB 192,192,192 is the same as #C0C0C0*/
+    -webkit-transition: border 500ms ease;
+    -moz-transition: border 500ms ease;
+    -ms-transition: border 500ms ease;
+    -o-transition: border 500ms ease;
+    transition: border 500ms ease;
 }
 
+div.nav a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+}
+
+
+/* PROJECTS */
+
+#projects {
+    margin: 2% 10%;
+}
+
+.bot {
+    padding-top: 2%;
+}
+
+
 /* ABOUT */
-div.About {
-    font-size: 140%;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 5%;
+
+#about {
+    margin-top: 2%;
+    font-size: 125%;
+    
     line-height: 40px;
 }
 
+
 /* CONTACT */
+
+.Contact h2 {
+    margin-top: 2%;
+}
+
 table {
     text-align: left;
     margin: auto;
-    margin-top: 5%
+    margin-top: 5% border-collapse: collapse;
 }
+
 td {
     text-align: right;
 }
+
 th {
     text-align: center;
 }
-table {
-    border-collapse: collapse;
-    font-size: 125%;
-}
+
 th,
 td {
     padding: 8px;
 }
+
 tr:nth-child(even) {
-    background-color: #f2f2f2
+    background-color: lightgray;
 }
