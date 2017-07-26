@@ -1,0 +1,107 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+
+/* HEADER */
+
+.header {
+    margin-top: 1%;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 250%;
+}
+
+.header img {
+    border-radius: 10%;
+    width: 17%
+}
+
+
+/* NAV BAR */
+
+.container.nav {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 200%;
+    width: 100%; 
+    height: auto; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+div.nav a {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    /* ^- the important bit. RGB 192,192,192 is the same as #C0C0C0*/
+    -webkit-transition: border 500ms ease;
+    -moz-transition: border 500ms ease;
+    -ms-transition: border 500ms ease;
+    -o-transition: border 500ms ease;
+    transition: border 500ms ease;
+}
+
+div.nav a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 1);
+}
+
+
+/* PROJECTS */
+
+#projects {
+    margin: 2% 10%;
+}
+
+.bot {
+    padding-top: 2%;
+}
+
+
+/* ABOUT */
+
+#about {
+    margin-top: 2%;
+    font-size: 125%;
+    
+    line-height: 40px;
+}
+
+
+/* CONTACT */
+
+.Contact h2 {
+    margin-top: 2%;
+}
+
+table {
+    text-align: left;
+    margin: auto;
+    margin-top: 5% border-collapse: collapse;
+}
+
+td {
+    text-align: right;
+}
+
+th {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
