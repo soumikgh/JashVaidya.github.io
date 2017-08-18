@@ -34,8 +34,12 @@ h1 {
     margin-top: 2%;
     font-size: 200%;
     width: 75%; 
+<<<<<<< HEAD
     height: auto;
 
+=======
+    height: auto; 
+>>>>>>> fb098f1823473bb27afb064c9b082b2b6fce9595
 }
 
 .nav a {
