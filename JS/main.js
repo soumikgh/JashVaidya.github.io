@@ -1,41 +1,113 @@
-function Function() {
-    var x = document.getElementById('about');
-    var y = document.getElementById('contact');
-    var z = document.getElementById('projects');
+$("#arrow").click(function () {
+    $('html,body').animate({
+            scrollTop: $("#part2").offset().top
+        },
+        1800);
+});
 
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-        y.style.display = 'none';
-        z.style.display = 'none';
+$("#homeLink").click(function () {
+    $('html,body').animate({
+            scrollTop: $("#home").offset().top
+        },
+        1800);
+});
+
+$("#aboutLink").click(function () {
+    $('html,body').animate({
+            scrollTop: $("#part2").offset().top
+        },
+        1800);
+});
+
+$("#projectLink").click(function () {
+    $('html,body').animate({
+            scrollTop: $("#part3").offset().top
+        },
+        1800);
+});
+
+$("#contactLink").click(function () {
+    $('html,body').animate({
+            scrollTop: $("#part4").offset().top
+        },
+        1800);
+});
+
+$(document).ready(function () {
+
+    $(".cross").hide();
+    $(".menu").hide();
+    $(".hamburger").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".hamburger").hide();
+            $(".cross").show();
+        });
+    });
+
+    $(".cross").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".cross").hide();
+            $(".hamburger").show();
+        });
+    });
+
+});
+
+var words = ['student.', 'developer.', 'creator.', 'gamer.'],
+    currentStep = 0,
+    textEl = document.querySelector('.change-text'),
+    oldWord = '';
+
+
+setTimeout(changeWord, 1000);
+
+function changeWord() {
+    oldWord = textEl.innerHTML;
+
+    // check if there is a word atm or not
+    if (oldWord.length < 1) {
+
+        if (currentStep !== words.length - 1) {
+            currentStep++;
+        } else {
+            currentStep = 0;
+        }
+        addNextWord();
     } else {
-        x.style.display = 'none';
+        setTimeout(deleteWord, 800);
     }
+
+};
+
+function deleteWord() {
+    var WordLength = oldWord.length,
+        currentWord = textEl.innerHTML,
+        currentLength = currentWord.length;
+
+    // The word is deleted so, start adding in the new one
+    if (currentLength < 1) {
+        changeWord();
+        return;
+    }
+    // Remove a character
+    textEl.innerHTML = currentWord.substring(0, currentLength - 1);
+
+    setTimeout(deleteWord, 200);
 }
 
-function SecondFunction() {
-    var x = document.getElementById('contact');
-    var y = document.getElementById('about');
-    var z = document.getElementById('projects');
+function addNextWord() {
+    var currentWord = textEl.innerHTML,
+        currentLength = currentWord.length,
+        nextWord = words[currentStep],
+        nextWordLength = nextWord.length;
 
-    if (x.style.display === 'none') {
-        x.style.display = 'block';
-        y.style.display = 'none';
-        z.style.display = 'none';
-    } else {
-        x.style.display = 'none';
+    if (currentLength === nextWordLength) {
+        changeWord();
+        return;
     }
+    // add a character
+    textEl.innerHTML = nextWord.substring(0, currentLength + 1);
+
+    setTimeout(addNextWord, 200);
 }
 
-function ThirdFunction() {
-    var x = document.getElementById('projects');
-    var y = document.getElementById('about');
-    var z = document.getElementById('contact');
-
-    if (x.style.display === 'none') {
-        x.style.display = 'flex';
-        y.style.display = 'none';
-        z.style.display = 'none';
-    } else {
-        x.style.display = 'none';
-    }
-}
