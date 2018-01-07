@@ -283,7 +283,7 @@ a {
 }
 
 #part4, .land, hr {
-    background: url("https://i.imgur.com/9KlO3K5.png");
+    background: url("../ASSETS/background.png");
     -webkit-animation: 250s scroll infinite linear;
     -moz-animation: 250s scroll infinite linear;
     -o-animation: 250s scroll infinite linear;
