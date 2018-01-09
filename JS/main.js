@@ -2,35 +2,35 @@ $("#arrow").click(function () {
     $('html,body').animate({
             scrollTop: $("#part2").offset().top
         },
-        1800);
+        1200);
 });
 
 $("#homeLink").click(function () {
     $('html,body').animate({
             scrollTop: $("#home").offset().top
         },
-        1800);
+        1200);
 });
 
 $("#aboutLink").click(function () {
     $('html,body').animate({
             scrollTop: $("#part2").offset().top
         },
-        1800);
+        1200);
 });
 
 $("#projectLink").click(function () {
     $('html,body').animate({
             scrollTop: $("#part3").offset().top
         },
-        1800);
+        1200);
 });
 
 $("#contactLink").click(function () {
     $('html,body').animate({
             scrollTop: $("#part4").offset().top
         },
-        1800);
+        1200);
 });
 
 $(document).ready(function () {
