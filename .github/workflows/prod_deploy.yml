@@ -12,4 +12,4 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: pages publish . --project-name=jv
+          command: pages publish $GITHUB_WORKSPACE --project-name=jv
