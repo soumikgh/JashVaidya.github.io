@@ -9,9 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Publish
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          projectName: jv
-          directory: $GITHUB_WORKSPACE
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: pages publish . --project-name=jv
